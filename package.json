@@ -9,6 +9,7 @@
     "bootstrap": "^5.2.3",
     "firebase": "^9.22.0",
     "leaflet": "^1.9.3",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
@@ -16,6 +17,7 @@
     "react-map-gl": "^7.0.23",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.2",
     "viewport-mercator-project": "^7.0.4",
     "web-vitals": "^2.1.4"
   },

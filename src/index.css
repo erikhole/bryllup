@@ -5,13 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-
 }
 
 .image-container {
@@ -23,7 +21,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 1px solid #D4AF37;
+  border: 1px solid #d4af37;
   position: relative;
   z-index: 2;
 }
@@ -35,7 +33,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: #D4AF37;
+  background-color: #d4af37;
   opacity: 0;
   transition: opacity 0.3s ease;
   filter: blur(10px); /* Adjust the blur radius */
@@ -46,12 +44,16 @@ img {
   opacity: 0.5;
 }
 
-
-.App {
+.Center {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #003366;
 }
 
@@ -62,4 +64,72 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-weight: bold;
+}
+
+.custom-btn {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+}
+.custom-btn :hover {
+  background-color: rgba(219, 224, 225, 0.521);
+}
+.btn-text {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.icon {
+  filter: grayscale(100%); /* Apply grayscale effect */
+  transition: filter 0.3s; /* Add transition for smooth effect */
+  border: none;
+
+  /* Add additional styles for hover effect */
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.icon:hover {
+  filter: none; /* Remove grayscale effect on hover */
+  opacity: 1;
+}
+
+.post-hr {
+  width: 100%; /* Set the width to 100% */
+  margin-top: 10px; /* Add spacing between the hr and content */
+  border: none;
+  border-top: 1px solid #ccc; /* Add a border style if needed */
+}
+
+.post-author {
+  font-size: 1rem;
+  color: #003366;
+  font-weight: bold;
+}
+
+.post-content {
+  font-size: 1rem;
+}
+.post-time {
+  font-size: 0.8rem;
+  color: #003366;
+}
+
+.comment-count {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: transparent;
+  border: none;
+  color: #003366;
+  font-weight: bold;
+  text-decoration: underline;
 }
