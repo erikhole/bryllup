@@ -71,6 +71,9 @@ const NavBar = () => {
             <Nav.Link as={Link} to="/oppdateringer">
               Oppdateringer
             </Nav.Link>
+            <Nav.Link as={Link} to="/informasjon">
+              Praktisk informasjon
+            </Nav.Link>
           </Nav>
           {user ? (
             <button
@@ -80,10 +83,13 @@ const NavBar = () => {
               onMouseLeave={handleMouseLeave}
             >
               {isHovered ? (
-                <span className="user-indicator">Log out from {user.displayName}</span>
+                <span className="user-indicator">
+                  Log out from {user.displayName}
+                </span>
               ) : (
                 <span className="user-indicator">
-                  Logged in as: {user.displayName || generateDisplayName(user.email)}
+                  Logged in as:{' '}
+                  {user.displayName || generateDisplayName(user.email)}
                 </span>
               )}
             </button>

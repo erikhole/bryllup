@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import ImageCarousel from './ImageCarousel';
 
 const Homepage = () => {
   const imageContainerRef = useRef(null);
@@ -84,32 +85,42 @@ const Homepage = () => {
 
   return (
     <Container className="Center">
-      <h1>Erik og Saras bryllup</h1>
-      <h5 className="mt-3">
-        Vi gifter oss 1. juni 2024. Mer informasjon og invitasjon kommer.
+      <h1 className="text-center">Erik og Saras bryllup</h1>
+      <h5 className="mt-3 text-center">
+        Vi gifter oss 1. juni 2024 i Sandnes. Vi gleder oss til å feire dagen
+        med dere!
       </h5>
+      <ImageCarousel />
 
-      <h3 className="pt-5 pb-2">Vigsel blir i Julebygda kirke kl. xx:xx</h3>
+      <h3 className="pt-5 pb-2 text-center">
+        Vigsel blir i Julebygda kirke kl. 13:45
+      </h3>
       <div ref={imageContainerRef} className="image-container">
         <img
+          className="imgs"
           src="https://kagi.com/proxy/julebygda2.jpg?c=ggGFvKBjpQ9pdvrnO3yU7Byt2lzssOuV8Sky94ja3TgvBvBSRXLLFJkfC4vs6c-3w2HYSXmUzB1LnhrodYuqHJgvDqXjDYG_iHPXWUjsBjbCOz7mciivu86lnMe3VK4Y2e0vPth7V1bD17hum65IZw%3D%3D"
           alt="Julbygda kirke"
-          style={{ maxWidth: '450px' }}
+          style={{ maxWidth: '100%', height: 'auto' }}
         />
         <div ref={shadowRef} className="shadow"></div>
       </div>
 
-      <h3 className="pt-5 pb-2">Fest blir på Løå på Lea kl. xx:xx</h3>
+      <h3 className="pt-5 pb-2 text-center">
+        Etterpå blir det middag på Løå på Lea (klokkeslett kommer)
+      </h3>
       <div ref={imageContainerRef2} className="image-container">
         <img
+          className="imgs"
           src="https://kagi.com/proxy/th?c=3SgynE8ofVcfX71I7M3hS6GDC2_gG-mWxdmR1ay6nb9s746JyMFYno6YxwPUF7DD1clWVKe-cWQPHEwHctjoJAZoUh6DyIkRP0KL0kA6A6pvh-OxeGqZsbAUURqovCXK"
           alt="løå på lea"
-          style={{ maxWidth: '450px' }}
+          style={{ maxWidth: '100%', height: 'auto' }}
         />
         <div ref={shadowRef2} className="shadow"></div>
       </div>
 
-      <p className="pt-5">Vi gleder oss til å feire dagen sammen med dere!</p>
+      <p className="pt-5 text-center">
+        Vi gleder oss til å feire dagen sammen med dere!
+      </p>
     </Container>
   );
 };

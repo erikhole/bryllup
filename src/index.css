@@ -17,13 +17,26 @@ code {
   display: inline-block;
 }
 
-img {
+.imgs {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   border: 1px solid #d4af37;
   position: relative;
   z-index: 2;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.carousel-control.right,
+.carousel-control.left,
+.carousel .item,
+.carousel-inner,
+.carousel-inner > .item > img {
+  border-radius: 10px;
 }
 
 .shadow {

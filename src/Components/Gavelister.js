@@ -5,7 +5,12 @@ const Gavelister = () => {
   return (
     <Container>
       <h1>Gavelister</h1>
-      <p className="pt-5">Her kommer lenker til gavelister.</p>
+      <p className="pt-5">
+        Gaveliste på{' '}
+        <a href="https://www.tilbords.no/bryllup/endre-onskeliste?wishListId=134253">
+          Tilbords
+        </a>
+      </p>
     </Container>
   );
 };

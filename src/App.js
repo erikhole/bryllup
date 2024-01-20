@@ -9,6 +9,7 @@ import Gavelister from './Components/Gavelister';
 import MapLocations from './Components/Map';
 import PostList from './Components/updates/postList';
 import PostPage from './Components/updates/postPage';
+import Informasjon from './Components/Informasjon';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/gavelister" element={<Gavelister />} />
           <Route path="/kart" element={<MapLocations />} />
           <Route exact path="/oppdateringer" element={<PostList />} />
+          <Route path="/informasjon" element={<Informasjon />} />
 
           <Route path="/oppdateringer/:id" element={<PostPage />} />
         </Routes>
