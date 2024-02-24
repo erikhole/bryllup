@@ -15,8 +15,8 @@ const Gavelister = () => {
         Pengegaver kan sendes til Vipps-nummer
         <span className="font-weight-bold"> 90811303</span> eller til
         kontonummer
-        <span className="font-weight-bold"> 1226.94.38558</span>. Merk gjerne
-        med "bryllupsgave".
+        <span className="font-weight-bold"> 1226.94.38558</span>. Merk med
+        "bryllupsgave" + navn.
       </p>
     </Container>
   );
