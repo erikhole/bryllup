@@ -1,10 +1,65 @@
+html,
 body {
   margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* Width of the background images */
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: -1;
+}
+
+body {
+  background-image: url('../public/golden flower 1 pattern.png'),
+    url('../public/golden flower 2 pattern.png');
+  background-position: calc(0% - 220px) 500px, calc(100% + 300px) 500px; /* Adjust the 50px to half of your image width */
+  background-repeat: repeat-y;
+  background-attachment: fixed; /* Keep the background fixed during scroll */
+  background-size: 500px auto; /* Adjust the width to fit your images, this assumes a 100px wide image */
+}
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  body {
+    background-position: calc(0% - 200px) 300px, calc(100% + 250px) 300px; /* Adjust the 50px to half of your image width */
+    background-repeat: repeat-y;
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    background-size: 300px auto; /* Adjust the width to fit your images, this assumes a 100px wide image */
+  }
+
+  .content-container {
+    padding: 0 60px; /* Adjust the padding for mobile screens */
+  }
+}
+.fading-border::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ddaa46, rgba(221, 170, 70, 0));
+  margin-top: 0.5rem;
+}
+.content-container {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto; /* Center the container */
+  padding: 0 120px; /* Adjust padding to prevent content from overlapping the background images */
+  max-width: 1200px; /* Or your preferred max width */
 }
 
 code {
@@ -13,17 +68,28 @@ code {
 }
 
 .image-container {
+  margin: auto; /* Center the container */
   position: relative;
-  display: inline-block;
+  width: 100%;
+  max-width: 50rem; /* Adjust based on your preference */
+}
+
+.image-container::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%; /* Aspect ratio */
 }
 
 .imgs {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: 1px solid #d4af37;
-  position: relative;
-  z-index: 2;
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+  z-index: 2; /* Ensure image is above the shadow */
 }
 
 .carousel-control-next,

@@ -23,7 +23,7 @@ function App() {
         pauseOnHover
       />
       <NavBar />
-      <Container>
+      <Container className="content-container">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/gavelister" element={<Gavelister />} />

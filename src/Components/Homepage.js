@@ -93,34 +93,31 @@ const Homepage = () => {
       <ImageCarousel />
 
       <h3 className="pt-5 pb-2 text-center">
-        Vigsel blir i Julebygda kirke kl. 13:45
+        Vigsel blir i Julebygda Kapell kl. 13:45
       </h3>
-      <div ref={imageContainerRef} className="image-container">
+      <div ref={imageContainerRef} className="image-container mb-2">
         <img
           className="imgs"
           src="https://kagi.com/proxy/julebygda2.jpg?c=ggGFvKBjpQ9pdvrnO3yU7Byt2lzssOuV8Sky94ja3TgvBvBSRXLLFJkfC4vs6c-3w2HYSXmUzB1LnhrodYuqHJgvDqXjDYG_iHPXWUjsBjbCOz7mciivu86lnMe3VK4Y2e0vPth7V1bD17hum65IZw%3D%3D"
-          alt="Julbygda kirke"
-          style={{ maxWidth: '100%', height: 'auto' }}
+          alt="Julbygda kapell"
         />
         <div ref={shadowRef} className="shadow"></div>
       </div>
-
       <h3 className="pt-5 pb-2 text-center">
         Etterpå blir det middag på Løå på Lea (klokkeslett kommer)
       </h3>
-      <div ref={imageContainerRef2} className="image-container">
+      <div ref={imageContainerRef2} className="image-container mt-2">
         <img
           className="imgs"
           src="https://kagi.com/proxy/th?c=3SgynE8ofVcfX71I7M3hS6GDC2_gG-mWxdmR1ay6nb9s746JyMFYno6YxwPUF7DD1clWVKe-cWQPHEwHctjoJAZoUh6DyIkRP0KL0kA6A6pvh-OxeGqZsbAUURqovCXK"
           alt="løå på lea"
-          style={{ maxWidth: '100%', height: 'auto' }}
         />
         <div ref={shadowRef2} className="shadow"></div>
       </div>
 
-      <p className="pt-5 text-center">
+      <h3 className="pt-5 pb-2 text-center">
         Vi gleder oss til å feire dagen sammen med dere!
-      </p>
+      </h3>
     </Container>
   );
 };
