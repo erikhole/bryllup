@@ -115,9 +115,9 @@ const Homepage = () => {
         <div ref={shadowRef2} className="shadow"></div>
       </div>
 
-      <p className="pt-5 text-center">
+      <h3 className="pt-5 pb-2 text-center">
         Vi gleder oss til å feire dagen sammen med dere!
-      </p>
+      </h3>
     </Container>
   );
 };
