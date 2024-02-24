@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Add useLocation import
 import SignIn from './auth/signInWithEmail';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
@@ -10,6 +10,7 @@ const NavBar = () => {
   const [user, setUser] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const auth = getAuth();
+  const location = useLocation(); // Add useLocation hook
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -62,17 +63,47 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/kart">
-              Kart
+            <Nav.Link as={Link} to="/" active={location.pathname === '/'}>
+              {' '}
+              {/* Add active prop */}
+              Hjem
             </Nav.Link>
-            <Nav.Link as={Link} to="/gavelister">
+            <Nav.Link
+              as={Link}
+              to="/informasjon"
+              active={location.pathname === '/informasjon'}
+            >
+              {' '}
+              {/* Add active prop */}
+              Praktisk informasjon
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/gavelister"
+              active={location.pathname === '/gavelister'}
+            >
+              {' '}
+              {/* Add active prop */}
               Gaveliste
             </Nav.Link>
-            <Nav.Link as={Link} to="/oppdateringer">
-              Oppdateringer
+            <Nav.Link
+              as={Link}
+              to="/kart"
+              active={location.pathname === '/kart'}
+            >
+              {' '}
+              {/* Add active prop */}
+              Kart
             </Nav.Link>
-            <Nav.Link as={Link} to="/informasjon">
-              Praktisk informasjon
+
+            <Nav.Link
+              as={Link}
+              to="/oppdateringer"
+              active={location.pathname === '/oppdateringer'}
+            >
+              {' '}
+              {/* Add active prop */}
+              Oppdateringer
             </Nav.Link>
           </Nav>
           {user ? (

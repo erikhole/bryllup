@@ -39,7 +39,7 @@ function OpenStreetMapComponent() {
   });
 
   return (
-    <div style={{ height: '400px' }}>
+    <div style={{ height: '100vh' }}>
       <MapContainer
         center={[58.85565888517952, 5.658234571041399]}
         zoom={12}

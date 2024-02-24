@@ -13,17 +13,28 @@ code {
 }
 
 .image-container {
+  margin: auto; /* Center the container */
   position: relative;
-  display: inline-block;
+  width: 100%;
+  max-width: 50rem; /* Adjust based on your preference */
+}
+
+.image-container::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%; /* Aspect ratio */
 }
 
 .imgs {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: 1px solid #d4af37;
-  position: relative;
-  z-index: 2;
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+  z-index: 2; /* Ensure image is above the shadow */
 }
 
 .carousel-control-next,

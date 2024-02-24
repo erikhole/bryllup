@@ -24,12 +24,12 @@ const Informasjon = () => {
       </p>
       <div className="row">
         <div className="col-md-6">
-          <h2>Dato og tid i Kirka</h2>
+          <h2>Dato og tid i kirka</h2>
           <p>Dato: 01.06.24</p>
           <p>Tid: 13:45</p>
           <h2>Sted</h2>
           <p>
-            Adresse Julbygda kapell:
+            Adresse Julebygda kapell:
             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj8_OKO7-uDAxXSFBAIHWOdCuwQ4kB6BAg4EAM&url=%2Fmaps%2Fplace%2F%2Fdata%3D!4m2!3m1!1s0x463a49b2fb8f28db%3A0x90c18982c55bb09e%3Fsa%3DX%26ved%3D2ahUKEwj8_OKO7-uDAxXSFBAIHWOdCuwQ4kB6BAgQEAA&usg=AOvVaw1W4MJ9qurwQlVb5CWd_qyv&opi=89978449">
               Leiteveien 150, 4312 Sandnes
             </a>
