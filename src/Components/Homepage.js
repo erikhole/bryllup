@@ -93,13 +93,13 @@ const Homepage = () => {
       <ImageCarousel />
 
       <h3 className="pt-5 pb-2 text-center">
-        Vigsel blir i Julebygda kirke kl. 13:45
+        Vigsel blir i Julebygda Kapell kl. 13:45
       </h3>
       <div ref={imageContainerRef} className="image-container mb-2">
         <img
           className="imgs"
           src="https://kagi.com/proxy/julebygda2.jpg?c=ggGFvKBjpQ9pdvrnO3yU7Byt2lzssOuV8Sky94ja3TgvBvBSRXLLFJkfC4vs6c-3w2HYSXmUzB1LnhrodYuqHJgvDqXjDYG_iHPXWUjsBjbCOz7mciivu86lnMe3VK4Y2e0vPth7V1bD17hum65IZw%3D%3D"
-          alt="Julbygda kirke"
+          alt="Julbygda kapell"
         />
         <div ref={shadowRef} className="shadow"></div>
       </div>
