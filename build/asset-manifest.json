@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.97af172b.css",
-    "main.js": "/static/js/main.f8e1ad37.js",
+    "main.css": "/static/css/main.2f021973.css",
+    "main.js": "/static/js/main.9dd60ede.js",
     "static/js/787.22c16144.chunk.js": "/static/js/787.22c16144.chunk.js",
+    "static/media/golden flower 1 pattern.png": "/static/media/golden flower 1 pattern.bad1d138e02cf402870c.png",
+    "static/media/golden flower 2 pattern.png": "/static/media/golden flower 2 pattern.f55d9c0b03d09aa17c69.png",
     "index.html": "/index.html",
     "static/media/chat.svg": "/static/media/chat.507432b4f052a5ad0ac900ec17483d68.svg",
     "static/media/trash.svg": "/static/media/trash.3533bf93c28289586c172997d8703057.svg",
-    "main.97af172b.css.map": "/static/css/main.97af172b.css.map",
-    "main.f8e1ad37.js.map": "/static/js/main.f8e1ad37.js.map",
+    "main.2f021973.css.map": "/static/css/main.2f021973.css.map",
+    "main.9dd60ede.js.map": "/static/js/main.9dd60ede.js.map",
     "787.22c16144.chunk.js.map": "/static/js/787.22c16144.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97af172b.css",
-    "static/js/main.f8e1ad37.js"
+    "static/css/main.2f021973.css",
+    "static/js/main.9dd60ede.js"
   ]
 }

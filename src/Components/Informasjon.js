@@ -62,13 +62,17 @@ const Informasjon = () => {
                 overnattingssteder:
               </p>
               <ul>
-                <li>Kommer</li>
-                {/* Uncomment or add items as needed
-                <li>Vølstadskogen hytter og Camping</li>
-                <li>Hotell Sverre</li>
-                <li>Quality Hotel Residence</li>
-                <li>Thon Hotel Sandnes</li>
-                */}
+                <li>
+                  <a href="https://www.strawberry.no/hotell/norge/sandnes/quality-hotel-residence/">
+                    Quality Hotel Residence
+                  </a>
+                  (Rabattkode kommer om få uker)
+                </li>
+                <li>
+                  <a href="https://www.volstadskogen.no/nb/velkommen/">
+                    Vølstadskogen hytter og Camping
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -120,8 +124,8 @@ const Informasjon = () => {
               <div className="card-body">
                 <h2 className="fading-border">Transport</h2>
                 <p>
-                  Vi kommer til å sette opp taxi fra Løa på Lea til Sandnes
-                  sentrum på kvelden/natten. Tidsplan kommer.
+                  Vi kommer til å sette opp taxi fra Løa på Lea til Quality
+                  Hotel Residence på kvelden/natten. Tidsplan kommer.
                 </p>
               </div>
             </div>
